@@ -3,7 +3,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.4"
 
-gem "devise", github: "heartcombo/devise", ref: "f8d1ea90bc3"
+gem 'devise', '>= 4.8.1'
+gem 'devise-token_authenticatable'
+gem 'enumerize'
+gem 'fabrication'
+gem 'faker'
+gem 'figaro'
+gem 'image_processing'
+gem 'oauth2'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
+gem 'pagy'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
